@@ -63,18 +63,61 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/run/beamOn 1
+/control/execute macro.mac
+/control/execute macro.mac
+/control/execute reload_vis.mac
+/run/reinitializeGeometry
 /vis/scene/notifyHandlers scene-0
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
+/run/beamOn 0
+/vis/scene/notifyHandlers scene-0
+/vis/scene/notifyHandlers scene-0
+/vis/scene/notifyHandlers scene-0
+/vis/scene/add/scale
+/vis/scene/notifyHandlers
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/scene/add/eventID
+/vis/scene/notifyHandlers
+/vis/scene/add/date
+/vis/scene/notifyHandlers
+/vis/scene/add/logo2D
+/vis/scene/notifyHandlers
+/vis/scene/add/logo
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Envelope 0 0 0 1 .0
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Shielding 0 0 0 1 .5
+/vis/scene/notifyHandlers
+/vis/viewer/set/style surface
+/vis/viewer/refresh
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/refresh
+/vis/viewer/set/viewpointThetaPhi 90 180
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/control/execute macro.mac
+/vis/disable
+/tracking/storeTrajectory 0
+/gps/particle ion
+/shielding/thickness 1.0
+/gps/ion 27 60
+/run/beamOn 10000
+/shielding/thickness 26.0
+/gps/ion 27 60
+/run/beamOn 10000
+/shielding/thickness 50.0
+/gps/ion 27 60
+/run/beamOn 10000
+/shielding/thickness 1.0
+/gps/ion 55 137
+/run/beamOn 10000
+/shielding/thickness 26.0
+/gps/ion 55 137
+/run/beamOn 10000
+/shielding/thickness 50.0
+/gps/ion 55 137
+/run/beamOn 10000

@@ -47,6 +47,7 @@ set(SCRIPTS
   init_vis.mac
   vis.mac
   test_run.mac
+  reload_vis.mac
   )
 
 foreach(_script ${SCRIPTS})
