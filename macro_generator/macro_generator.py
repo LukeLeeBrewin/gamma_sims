@@ -13,7 +13,7 @@ class MacroGenerator:
 
     def prelude(self):
         print("Prelude")
-        self.master_str += "/vis/disable/\n"
+        self.master_str += "/vis/disable\n"
         self.master_str += "/tracking/storeTrajectory 0\n"
         self.master_str += "/gps/particle ion\n\n"
     
@@ -37,18 +37,11 @@ class MacroGenerator:
                     self.master_str += f"/gps/ion {protons} {atomic_number}\n"
                     self.master_str += f"/run/beamOn {int(counts)}\n"
 
-
-
-
-
-
-        
-
     def assembleMacro(self):
         self.prelude()
         self.applyIsotope()
 
-        with open("macro.mac", "w") as f:
+        with open("./isotope_macro.mac", "w") as f:
             f.write(self.master_str)
 
 
@@ -57,8 +50,18 @@ if __name__ == "__main__":
 
     activity_array = [1e4]
     shielding_array = np.linspace(1, 50, 3)
-    isotope_list = ["Co60", "Cs137"]
+    isotope_list = ["Co60", "Cs137", "Eu152"]
 
     mg = MacroGenerator(isotope_list = isotope_list, shielding_range=shielding_array, activity_range=activity_array)
 
     mg.assembleMacro()
+
+
+    """
+    To Do: 
+
+    1. Implement Moving Source
+    2. AABB Target Box Implementation
+    3. Change Shielding X and Y 
+
+    """

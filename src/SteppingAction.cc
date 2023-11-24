@@ -35,6 +35,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4LogicalVolume* volume 
     = step->GetPreStepPoint()->GetTouchableHandle()
       ->GetVolume()->GetLogicalVolume();
+    
+    G4ThreeVector momentum = step->GetDeltaMomentum();
+    G4ThreeVector position = step->GetDeltaPosition();
+    
+    
       
   // check if we are in scoring volume
   if (volume != fScoringVolume) return;

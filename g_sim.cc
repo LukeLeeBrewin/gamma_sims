@@ -25,10 +25,17 @@ int main(int argc,char** argv)
   // Optionally: choose a different Random engine...
   // G4Random::setTheEngine(new CLHEP::MTwistEngine);
   
-  // Construct the default run manager
-  //
-  auto* runManager =
-    G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+
+  //construct the default run manager
+  #ifdef G4MULTITHREADED
+    G4MTRunManager* runManager = new G4MTRunManager;
+    runManager->SetNumberOfThreads(G4Threading::G4GetNumberOfCores()-2); // Change this!!!
+  #else
+    //my Verbose output class
+    G4VSteppingVerbose::SetInstance(new SteppingVerbose);
+    G4RunManager* runManager = new G4RunManager;
+  #endif
+
 
   // Set mandatory initialization classes
   //

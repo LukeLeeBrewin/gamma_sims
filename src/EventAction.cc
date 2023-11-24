@@ -39,7 +39,6 @@ void EventAction::EndOfEventAction(const G4Event*)
 
   G4AnalysisManager *man = G4AnalysisManager::Instance();
 
-  G4cout << runID << G4endl;
   if (fEdep > 0){
 
     man->FillNtupleIColumn(0, runID);
