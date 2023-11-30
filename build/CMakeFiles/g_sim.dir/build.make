@@ -109,9 +109,22 @@ CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorConstruction.cc -o CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s
 
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: CMakeFiles/g_sim.dir/flags.make
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: ../src/DetectorMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc
+
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc > CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i
+
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s
+
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../src/EventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g_sim.dir/src/EventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/g_sim.dir/src/EventAction.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/EventAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/EventAction.cc
 
 CMakeFiles/g_sim.dir/src/EventAction.cc.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.s: cmake_force
 
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 
 CMakeFiles/g_sim.dir/src/RunAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/RunAction.cc.o: ../src/RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/g_sim.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/g_sim.dir/src/RunAction.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/RunAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/RunAction.cc
 
 CMakeFiles/g_sim.dir/src/RunAction.cc.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/g_sim.dir/src/RunAction.cc.s: cmake_force
 
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/g_sim.dir/src/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/g_sim.dir/src/SteppingAction.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/SteppingAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/SteppingAction.cc
 
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.i: cmake_force
@@ -167,6 +180,7 @@ g_sim_OBJECTS = \
 "CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o" \
 "CMakeFiles/g_sim.dir/src/Detector.cc.o" \
 "CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o" \
 "CMakeFiles/g_sim.dir/src/EventAction.cc.o" \
 "CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/g_sim.dir/src/RunAction.cc.o" \
@@ -179,6 +193,7 @@ g_sim: CMakeFiles/g_sim.dir/g_sim.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/Detector.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o
+g_sim: CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/EventAction.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/RunAction.cc.o
@@ -232,7 +247,7 @@ g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4global.so
 g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4clhep.so
 g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4ptl.so.0.0.2
 g_sim: CMakeFiles/g_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable g_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable g_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/g_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

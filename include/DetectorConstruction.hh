@@ -21,11 +21,15 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* detectorLog;
     G4LogicalVolume* GetScoringVolume() const { return fScoringVolume; }
 
+
+
+
   private:
 
     virtual void ConstructSDandField();
     G4GenericMessenger *fmessenger;
     G4double sZ; 
+    
 
   protected:
     G4LogicalVolume*  fScoringVolume;

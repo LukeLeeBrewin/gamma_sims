@@ -84,6 +84,9 @@ void RunAction::BeginOfRunAction(const G4Run*)
   man->CreateNtupleIColumn("runID");
   man->CreateNtupleIColumn("fEvent");
   man->CreateNtupleDColumn("edep");
+  man->CreateNtupleDColumn("shielding");
+  man->CreateNtupleSColumn("shield_mat");
+
   man->FinishNtuple(0);
 
   filename = filename.substr(0, filename.size() - runIDstr.size());

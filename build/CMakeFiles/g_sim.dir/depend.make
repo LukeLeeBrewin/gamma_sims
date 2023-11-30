@@ -1397,6 +1397,7 @@ CMakeFiles/g_sim.dir/src/Detector.cc.o: ../src/Detector.cc
 
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../include/Detector.hh
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../include/DetectorConstruction.hh
+CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../include/DetectorMessenger.hh
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/Normal3D.h
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/Plane3D.h
@@ -1863,6 +1864,24 @@ CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/trkdefs.hh
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: ../include/DetectorMessenger.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4EnvironmentUtils.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4Exception.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ExceptionSeverity.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GlobalConfig.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4String.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4String.icc
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4Types.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VExceptionHandler.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ios.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/globals.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/templates.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/tls.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: ../src/DetectorMessenger.cc
+
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../include/Detector.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../include/DetectorConstruction.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../include/DetectorMessenger.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../include/EventAction.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../include/RunAction.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
@@ -1944,6 +1963,8 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AnalysisManagerState.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AnalysisUtilities.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AnalysisVerbose.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AnyMethod.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AnyType.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ApplicationState.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AutoLock.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4AuxiliaryNavServices.hh
@@ -1956,6 +1977,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4BlockingList.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4BlockingList.icc
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ClassificationOfNewTrack.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4CollectionNameVector.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4DCofThisEvent.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4DataVector.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4DataVector.icc
@@ -1979,6 +2001,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GRSSolid.icc
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GRSVolume.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GRSVolume.icc
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GenericMessenger.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GeomSplitter.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GlobalConfig.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4H1ToolsManager.hh
@@ -2068,6 +2091,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4RunManager.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4RunManagerKernel.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4SandiaTable.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4SensitiveVolumeList.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4SmartTrackStack.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4SmartVoxelHeader.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4SmartVoxelHeader.icc
@@ -2141,6 +2165,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VH1Manager.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VH2Manager.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VH3Manager.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VHit.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VHitsCollection.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VNtupleFileManager.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VNtupleManager.hh
@@ -2153,6 +2178,9 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VPhysicalVolume.icc
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VProcess.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VRNtupleManager.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VReadOutGeometry.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VSDFilter.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VSensitiveDetector.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VSolid.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VSolid.icc
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VSteppingVerbose.hh
@@ -2161,6 +2189,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VTouchable.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VTouchable.icc
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VTrajectory.hh
+CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VUserDetectorConstruction.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VUserEventInformation.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VUserTrackInformation.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VVolumeMaterialScanner.hh

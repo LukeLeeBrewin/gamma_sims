@@ -12,8 +12,11 @@
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "Detector.hh"
+#include "DetectorMessenger.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+
 
 DetectorConstruction::DetectorConstruction()
 : G4VUserDetectorConstruction(),
@@ -23,6 +26,7 @@ DetectorConstruction::DetectorConstruction()
   fmessenger = new G4GenericMessenger(this, "/shielding/", "Shielding Thickness");
   fmessenger->DeclareProperty("thickness", sZ, "Width of shielding material");
 
+  DetectorMessenger::GetInstance()->SetThickness(sZ);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

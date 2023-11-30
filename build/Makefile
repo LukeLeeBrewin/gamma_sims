@@ -290,6 +290,33 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) -f CMakeFiles/g_sim.dir/build.make CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/DetectorMessenger.o: src/DetectorMessenger.cc.o
+
+.PHONY : src/DetectorMessenger.o
+
+# target to build an object file
+src/DetectorMessenger.cc.o:
+	$(MAKE) -f CMakeFiles/g_sim.dir/build.make CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o
+.PHONY : src/DetectorMessenger.cc.o
+
+src/DetectorMessenger.i: src/DetectorMessenger.cc.i
+
+.PHONY : src/DetectorMessenger.i
+
+# target to preprocess a source file
+src/DetectorMessenger.cc.i:
+	$(MAKE) -f CMakeFiles/g_sim.dir/build.make CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i
+.PHONY : src/DetectorMessenger.cc.i
+
+src/DetectorMessenger.s: src/DetectorMessenger.cc.s
+
+.PHONY : src/DetectorMessenger.s
+
+# target to generate assembly for a file
+src/DetectorMessenger.cc.s:
+	$(MAKE) -f CMakeFiles/g_sim.dir/build.make CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s
+.PHONY : src/DetectorMessenger.cc.s
+
 src/EventAction.o: src/EventAction.cc.o
 
 .PHONY : src/EventAction.o
@@ -424,6 +451,9 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/DetectorMessenger.o"
+	@echo "... src/DetectorMessenger.i"
+	@echo "... src/DetectorMessenger.s"
 	@echo "... src/EventAction.o"
 	@echo "... src/EventAction.i"
 	@echo "... src/EventAction.s"

@@ -29,7 +29,7 @@ int main(int argc,char** argv)
   //construct the default run manager
   #ifdef G4MULTITHREADED
     G4MTRunManager* runManager = new G4MTRunManager;
-    runManager->SetNumberOfThreads(G4Threading::G4GetNumberOfCores()-2); // Change this!!!
+    runManager->SetNumberOfThreads(G4Threading::G4GetNumberOfCores()-2); 
   #else
     //my Verbose output class
     G4VSteppingVerbose::SetInstance(new SteppingVerbose);
