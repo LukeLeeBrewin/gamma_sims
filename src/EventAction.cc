@@ -34,7 +34,6 @@ void EventAction::EndOfEventAction(const G4Event*)
   // accumulate statistics in run action
   fRunAction->AddEdep(fEdep);
 
-
   G4double thickness = DetectorMessenger::GetInstance()->GetThickness();
   G4String shield_mat = DetectorMessenger::GetInstance()->GetShieldMat();
   G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
@@ -49,10 +48,8 @@ void EventAction::EndOfEventAction(const G4Event*)
     man->FillNtupleDColumn(2, fEdep);
     man->FillNtupleDColumn(3, thickness);
     man->FillNtupleSColumn(4, shield_mat);
-
     man->AddNtupleRow(0);
   }
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

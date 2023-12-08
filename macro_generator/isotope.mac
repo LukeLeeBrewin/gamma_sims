@@ -1,0 +1,113 @@
+
+/vis/disable
+/tracking/storeTrajectory 0
+/gps/particle ion
+
+
+
+#--------------------------------------------------------------
+# Co60
+/gps/ion 27 60
+/shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Co60
+/gps/ion 27 60
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Co60
+/gps/ion 27 60
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Co60
+/gps/ion 27 60
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Cs137
+/gps/ion 55 137
+/shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Cs137
+/gps/ion 55 137
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Cs137
+/gps/ion 55 137
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Cs137
+/gps/ion 55 137
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Eu152
+/gps/ion 63 152
+/shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Eu152
+/gps/ion 63 152
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Eu152
+/gps/ion 63 152
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+
+
+#--------------------------------------------------------------
+# Eu152
+/gps/ion 63 152
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000

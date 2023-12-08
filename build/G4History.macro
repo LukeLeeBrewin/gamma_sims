@@ -1,25 +1,31 @@
 /run/verbose 2
 /run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
 /tracking/storeTrajectory 0
-
-/vis/viewer/create ! ! 600x600-0+0
-/vis/viewer/refresh
-/vis/viewer/set/autoRefresh false
-/vis/verbose errors
-/vis/drawVolume
-/vis/scene/create
-/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
-/vis/sceneHandler/attach
-/vis/viewer/set/viewpointVector -1 0 0
-/vis/viewer/set/lightsVector -1 0 0
-/vis/viewer/set/style wireframe
-/vis/viewer/set/auxiliaryEdge true
-/vis/viewer/set/lineSegmentsPerCircle 100
-/vis/scene/add/trajectories smooth
-/tracking/storeTrajectory 2
-/vis/scene/notifyHandlers
-/vis/modeling/trajectories/create/drawByCharge
-/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+/run/reinitializeGeometry 
+/run/geometryModified 
+tepPts true
 /vis/scene/notifyHandlers scene-0
 /vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
 /vis/scene/notifyHandlers scene-0
@@ -62,34 +68,67 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/control/execute isotope_macro.mac
+/control/execute isotope.mac
 /vis/disable
 /tracking/storeTrajectory 0
 /gps/particle ion
-/shielding/thickness 1.0
 /gps/ion 27 60
-/run/beamOn 10000
-/shielding/thickness 26.0
-/gps/ion 27 60
-/run/beamOn 10000
-/shielding/thickness 50.0
-/gps/ion 27 60
-/run/beamOn 10000
 /shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 27 60
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 27 60
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 27 60
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
 /gps/ion 55 137
-/run/beamOn 10000
-/shielding/thickness 26.0
-/gps/ion 55 137
-/run/beamOn 10000
-/shielding/thickness 50.0
-/gps/ion 55 137
-/run/beamOn 10000
 /shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 55 137
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 55 137
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 55 137
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
 /gps/ion 63 152
-/run/beamOn 10000
-/shielding/thickness 26.0
+/shielding/thickness 1.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
 /gps/ion 63 152
-/run/beamOn 10000
-/shielding/thickness 50.0
+/shielding/thickness 7.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
 /gps/ion 63 152
-/run/beamOn 10000
+/shielding/thickness 14.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
+/gps/ion 63 152
+/shielding/thickness 20.0
+/run/reinitializeGeometry
+/run/geometryModified
+/run/beamOn 1000
