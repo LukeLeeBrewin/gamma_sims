@@ -1865,12 +1865,16 @@ CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: /home/lukelee-brewin/GEANT4/
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: ../include/DetectorMessenger.hh
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Utility/defs.h
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Vector/ThreeVector.h
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Vector/ThreeVector.icc
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4EnvironmentUtils.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4Exception.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ExceptionSeverity.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4GlobalConfig.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4String.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4String.icc
+CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ThreeVector.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4Types.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/G4ios.hh
@@ -2314,6 +2318,7 @@ CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/trkdefs.hh
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../src/EventAction.cc
 
+CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: ../include/DetectorMessenger.hh
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: ../include/PrimaryGeneratorAction.hh
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/Normal3D.h

@@ -22,7 +22,7 @@ RunAction::RunAction()
   fEdep(0.)
 { 
 
-  G4RunManager::GetRunManager()->GeometryHasBeenModified();
+  //G4RunManager::GetRunManager()->GeometryHasBeenModified();
 
   // Register accumulable to the accumulable manager
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
@@ -34,8 +34,9 @@ RunAction::RunAction()
   man->CreateNtupleIColumn("runID");
   man->CreateNtupleIColumn("fEvent");
   man->CreateNtupleDColumn("edep");
-  man->CreateNtupleDColumn("shielding");
-  man->CreateNtupleSColumn("shield_mat");
+  man->CreateNtupleDColumn("x");
+  man->CreateNtupleDColumn("y");
+  man->CreateNtupleDColumn("z");
   man->FinishNtuple(0);
 
 }

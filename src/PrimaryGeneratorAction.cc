@@ -9,6 +9,7 @@
 #include "G4ParticleDefinition.hh"
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
+#include "DetectorMessenger.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -52,22 +53,23 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     envSizeXY = fEnvelopeBox->GetXHalfLength()*2.;
     envSizeZ = fEnvelopeBox->GetZHalfLength()*2.;
   }  
-  else  {
-    G4ExceptionDescription msg;
-    msg << "Envelope volume of box shape not found.\n"; 
-    msg << "Perhaps you have changed geometry.\n";
-    msg << "The gun will be place at the center.";
-    G4Exception("PrimaryGeneratorAction::GeneratePrimaries()",
-     "MyCode0002",JustWarning,msg);
-  }
 
   G4double size = 0.8; 
   G4double x0 = size * envSizeXY;
   G4double y0 = size * envSizeXY;
   G4double z0 = 0.5 * envSizeZ;
+
   
+
+  
+
   fGeneralParticleSource->SetParticlePosition(G4ThreeVector(x0,y0,z0));
   fGeneralParticleSource->GeneratePrimaryVertex(anEvent);
+
+  G4ThreeVector pos = fGeneralParticleSource->GetParticlePosition();
+  // std::cout << "\nDetector Position: " << pos[0] << "  " << pos[1] << "  " << pos[2] << "\n\n\n" << std::endl;
+  DetectorMessenger::GetInstance()->SetPosition(pos);
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

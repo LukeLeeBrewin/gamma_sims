@@ -25,15 +25,10 @@ DetectorConstruction::DetectorConstruction()
 
   DefineMaterials();
 
-  
   fmessenger = new G4GenericMessenger(this, "/shielding/", "Shielding Thickness");
   fmessenger->DeclareProperty("thickness", sZ, "Width of shielding material");
 
-  sZ = 0.3*cm;
-
-  
-
-
+  sZ = 0*m;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -45,9 +40,8 @@ void DetectorConstruction::DefineMaterials(){
 
   // Get nist material manager
   G4NistManager* nist = G4NistManager::Instance();
-  env_mat = nist->FindOrBuildMaterial("G4_AIR");
+  env_mat = nist->FindOrBuildMaterial("G4_Al");
   world_mat = nist->FindOrBuildMaterial("G4_AIR");
-  shielding_mat = nist->FindOrBuildMaterial("G4_Al");
   det_mat = nist->FindOrBuildMaterial("G4_SODIUM_IODIDE");
 
 }
@@ -64,7 +58,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   // Envelope parameters
   //
-  G4double env_sizeXY = 1*m, env_sizeZ = 1*m;
+  G4double env_sizeXY = 30*m, env_sizeZ = 30*m;
 
    
   // Option to switch on/off checking of volumes overlaps
@@ -122,47 +116,16 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 
   //     
-  // Shielding
-  //  
-
-  G4ThreeVector shielding_pos = G4ThreeVector(0, 0, 0);
-  shielding_pos.setZ(-sZ*cm/2);
-
-
-
-  solidShield =    
-    new G4Box("shielding",                    //its name
-        20*cm, 20*cm, sZ*cm/2); //its size
-      
-  logicShield =                         
-    new G4LogicalVolume(solidShield,         //its solid
-                        shielding_mat,       //its material
-                        "shieldingLog");        //its name
-
-  shieldPhys =             
-    new G4PVPlacement(0,                       //no rotation
-                    shielding_pos,         //at (0,0,0)
-                    logicShield,             //its logical volume
-                    "shieldingPhys",             //its name
-                    logicEnv,                //its mother  volume
-                    false,                   //no boolean operation
-                    0,                       //copy number
-                    checkOverlaps);          //overlaps checking
- 
-
-
-  //     
   // Detector
   //
 
   G4double innerRadius = 0.*cm;
-  G4double outerRadius = 10.*cm;
-  G4double hz = 10.*cm;
+  G4double outerRadius = 2*2.54*cm;
+  G4double hz = 16*2.54*cm;
   G4double startAngle = 0.*deg;
   G4double spanningAngle = 360.*deg;
 
-  G4ThreeVector det_pos = G4ThreeVector(0, 0, 0);
-  det_pos.setZ(-((sZ*cm) + hz)); // For some reason Threevectors don't update properly unless you do this, they are const.
+  G4ThreeVector det_pos = G4ThreeVector(0, 0, -hz);
 
 
   detector
@@ -190,7 +153,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
                 
   // Set Shape2 as scoring volume
-  //
   fScoringVolume = detectorLog;
 
   //

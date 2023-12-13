@@ -7,6 +7,7 @@
 #include "DetectorConstruction.hh"
 #include "DetectorMessenger.hh"
 
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 EventAction::EventAction(RunAction* runAction)
@@ -36,8 +37,10 @@ void EventAction::EndOfEventAction(const G4Event*)
 
   G4double thickness = DetectorMessenger::GetInstance()->GetThickness();
   G4String shield_mat = DetectorMessenger::GetInstance()->GetShieldMat();
+  G4ThreeVector pos = DetectorMessenger::GetInstance()->GetPosition(); 
   G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
   G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+  
 
   G4AnalysisManager *man = G4AnalysisManager::Instance();
 
@@ -46,8 +49,9 @@ void EventAction::EndOfEventAction(const G4Event*)
     man->FillNtupleIColumn(0, runID);
     man->FillNtupleIColumn(1, evt);
     man->FillNtupleDColumn(2, fEdep);
-    man->FillNtupleDColumn(3, thickness);
-    man->FillNtupleSColumn(4, shield_mat);
+    man->FillNtupleDColumn(3, pos[0]);
+    man->FillNtupleDColumn(4, pos[1]);
+    man->FillNtupleDColumn(5, pos[2]);
     man->AddNtupleRow(0);
   }
 }
