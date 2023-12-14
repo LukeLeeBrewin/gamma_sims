@@ -1,6 +1,5 @@
 /run/verbose 2
-/run/initialize /control/execute vis.mac
-/vis/open OGL 600x600-0+0
+/run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
 /vis/sceneHandler/create OGL
 /vis/viewer/create ! ! 600x600-0+0
 /vis/viewer/refresh
@@ -62,3 +61,8 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/gps/particle isotope
+/gps/particle ion
+/gps/ion 27 60
+/gps/position 0 0 10 cm
+/run/beamOn 200

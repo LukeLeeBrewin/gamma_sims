@@ -52,6 +52,8 @@ void EventAction::EndOfEventAction(const G4Event*)
     man->FillNtupleDColumn(3, pos[0]);
     man->FillNtupleDColumn(4, pos[1]);
     man->FillNtupleDColumn(5, pos[2]);
+    man->FillNtupleDColumn(6, thickness);
+    man->FillNtupleSColumn(7, shield_mat);
     man->AddNtupleRow(0);
   }
 }

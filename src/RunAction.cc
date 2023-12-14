@@ -37,6 +37,8 @@ RunAction::RunAction()
   man->CreateNtupleDColumn("x");
   man->CreateNtupleDColumn("y");
   man->CreateNtupleDColumn("z");
+  man->CreateNtupleDColumn("shieldZ");
+  man->CreateNtupleSColumn("shieldMat");
   man->FinishNtuple(0);
 
 }
