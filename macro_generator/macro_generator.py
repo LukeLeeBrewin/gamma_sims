@@ -19,7 +19,7 @@ class MacroGenerator:
         # Calculate source positions
         self.z = distance_to_source
         self.y = 0
-        self.x = np.linspace(-5, 5, 5) # Test 
+        self.x = np.linspace(-10, 20, 10) # Test 
 
 
 
@@ -48,7 +48,9 @@ class MacroGenerator:
         df_dict = {
             "Isotope":self.isotope_list, 
             "Activity":self.activity_range,
-            "Shielding":self.shielding_range
+            "x":self.x_step,
+            "y":self.y_step,
+            "z":self.z_step
         }
 
         self.df = pd.DataFrame(df_dict)
@@ -61,6 +63,7 @@ class MacroGenerator:
 
     def prelude(self):
         # Setup at top of macro file
+        self.master_str += f"/run/initialize\n"
         self.master_str += "/vis/disable\n"
         self.master_str += "/tracking/storeTrajectory 0\n"
         self.master_str += "/gps/particle ion\n\n"
@@ -75,7 +78,6 @@ class MacroGenerator:
 
             self.master_str += f"\n\n#--------------------------------------------------------------\n"
             self.master_str += f"# {self.isotope_list[i]}\n"
-            # self.master_str += f"/run/initialize\n"
             self.master_str += f"/gps/ion {protons} {atomic_number}\n"
             self.master_str += f"/gps/position {self.x_step[i]} {self.y_step[i]} {self.z_step[i]} {self.unit}\n"
 
@@ -92,10 +94,10 @@ class MacroGenerator:
 
 if __name__ == "__main__":
 
-    activity_array = [1e3]
+    activity_array = [1e5]
     shielding_array = [0]
-    isotope_list = ["Co60", "Cs137", "Eu152"]
-    distance_to_source = [1]
+    isotope_list = ["Ba133", "Cs137", "Co57", "F18", "Sr90", "Sr82", "Tl201", "Eu152", "I137", "Tc99", "Au198", "Cr51", "Mo99", "I131", "In131", "Sc46"]
+    distance_to_source = [3]
     source_speed = []
 
 

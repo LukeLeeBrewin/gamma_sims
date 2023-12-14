@@ -28,7 +28,7 @@ DetectorConstruction::DetectorConstruction()
   fmessenger = new G4GenericMessenger(this, "/shielding/", "Shielding Thickness");
   fmessenger->DeclareProperty("thickness", sZ, "Width of shielding material");
 
-  sZ = 0*m;
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -40,9 +40,15 @@ void DetectorConstruction::DefineMaterials(){
 
   // Get nist material manager
   G4NistManager* nist = G4NistManager::Instance();
-  env_mat = nist->FindOrBuildMaterial("G4_Al");
+  env_mat = nist->FindOrBuildMaterial("G4_AIR");
   world_mat = nist->FindOrBuildMaterial("G4_AIR");
   det_mat = nist->FindOrBuildMaterial("G4_SODIUM_IODIDE");
+
+  G4String shielding_mat_str = DetectorMessenger::GetInstance()->GetShieldMat(); 
+  sZ = DetectorMessenger::GetInstance()->GetThickness() * cm; 
+  std::cout << "Shielding Thickness: " << sZ << std::endl;
+  std::cout << "Shielding Material: " << shielding_mat_str << "\n" << std::endl;
+  shielding_mat =  nist->FindOrBuildMaterial(shielding_mat_str);
 
 }
 
@@ -51,19 +57,10 @@ void DetectorConstruction::DefineMaterials(){
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {  
   
-  std::cout << "\n\n\nConstruction Called\n" << sZ << "\n\n\n" << std::endl;
-  DetectorMessenger::GetInstance()->SetThickness(sZ);
-
-
-
   // Envelope parameters
   //
   G4double env_sizeXY = 30*m, env_sizeZ = 30*m;
-
-   
-  // Option to switch on/off checking of volumes overlaps
-  //
-  G4bool checkOverlaps = true;
+  G4bool checkOverlaps = false;
 
   //     
   // World
@@ -113,6 +110,31 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     0,                       //copy number
                     checkOverlaps);          //overlaps checking
  
+
+  //     
+  // Shielding
+  //  
+  solidShield =    
+    new G4Box("shield",                    //its name
+        0.5*env_sizeXY, 0.5*env_sizeXY, 0.5*sZ); //its size
+      
+  logicShield =                         
+    new G4LogicalVolume(solidShield,            //its solid
+                        shielding_mat,             //its material
+                        "shieldLog");         //its name
+
+  shieldPhys =             
+    new G4PVPlacement(0,                     //no rotation
+                    G4ThreeVector(0., 0., sZ/4),         //at (0,0,0)
+                    logicShield,             //its logical volume
+                    "shieldPhys",            //its name
+                    logicEnv,                //its mother  volume
+                    false,                   //no boolean operation
+                    0,                       //copy number
+                    checkOverlaps);          //overlaps checking
+ 
+
+
 
 
   //     

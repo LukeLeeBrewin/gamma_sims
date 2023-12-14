@@ -1,7 +1,7 @@
 /run/verbose 2
-/run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
-/tracking/storeTrajectory 0
-
+/run/initialize /control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
 /vis/viewer/create ! ! 600x600-0+0
 /vis/viewer/refresh
 /vis/viewer/set/autoRefresh false
@@ -62,52 +62,3 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/control/execute isotope.mac
-/vis/disable
-/tracking/storeTrajectory 0
-/gps/particle ion
-/gps/ion 27 60
-/gps/position -5.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 27 60
-/gps/position -2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 27 60
-/gps/position 0.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 27 60
-/gps/position 2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 27 60
-/gps/position 5.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 55 137
-/gps/position -5.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 55 137
-/gps/position -2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 55 137
-/gps/position 0.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 55 137
-/gps/position 2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 55 137
-/gps/position 5.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 63 152
-/gps/position -5.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 63 152
-/gps/position -2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 63 152
-/gps/position 0.0 0 1 cm
-/run/beamOn 1000
-/gps/ion 63 152
-/gps/position 2.5 0 1 cm
-/run/beamOn 1000
-/gps/ion 63 152
-/gps/position 5.0 0 1 cm
-/run/beamOn 1000

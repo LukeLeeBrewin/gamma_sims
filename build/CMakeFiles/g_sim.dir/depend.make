@@ -4,6 +4,7 @@
 CMakeFiles/g_sim.dir/g_sim.cc.o: ../include/ActionInitialization.hh
 CMakeFiles/g_sim.dir/g_sim.cc.o: ../include/Detector.hh
 CMakeFiles/g_sim.dir/g_sim.cc.o: ../include/DetectorConstruction.hh
+CMakeFiles/g_sim.dir/g_sim.cc.o: ../include/DetectorMessenger.hh
 CMakeFiles/g_sim.dir/g_sim.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/g_sim.dir/g_sim.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/Normal3D.h
 CMakeFiles/g_sim.dir/g_sim.cc.o: /home/lukelee-brewin/GEANT4/g4install/include/Geant4/CLHEP/Geometry/Plane3D.h

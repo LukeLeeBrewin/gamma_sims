@@ -8,8 +8,9 @@
 
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-
+#include <getopt.h>
 #include "Randomize.hh"
+#include "DetectorMessenger.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -18,13 +19,7 @@ int main(int argc,char** argv)
   // Detect interactive mode (if no arguments) and define UI session
   //
   G4UIExecutive* ui = 0;
-  if ( argc == 1 ) {
-    ui = new G4UIExecutive(argc, argv);
-  }
-
-  // Optionally: choose a different Random engine...
-  // G4Random::setTheEngine(new CLHEP::MTwistEngine);
-  
+  ui = new G4UIExecutive(argc, argv);
 
   //construct the default run manager
   #ifdef G4MULTITHREADED
@@ -35,6 +30,55 @@ int main(int argc,char** argv)
     G4VSteppingVerbose::SetInstance(new SteppingVerbose);
     G4RunManager* runManager = new G4RunManager;
   #endif
+
+  // Get the pointer to the User Interface manager
+  G4UImanager* UImanager = G4UImanager::GetUIpointer();
+
+  // Process macro or start UI session
+  // Define options
+  static struct option longOptions[] = {
+      {"file", required_argument, 0, 'b'},
+      {"shielding", required_argument, 0, 's'},
+      {"shieldmat", required_argument, 0, 'm'},
+      {"interactive", no_argument, 0, 'i'},
+      {0, 0, 0, 0} // Last element must be filled with zeros
+  };
+
+  int option; 
+  bool batch_mode = false;
+  G4String fileName;
+  while ((option = getopt_long(argc, argv, "b:s:m:i", longOptions, NULL)) != -1) {
+      switch (option) {
+          case 'b': {
+              // Batch mode
+              std::cout << "\n\n\nArg - File Option: "<< optarg << "\n" << std::endl;
+              batch_mode = true;
+              fileName = optarg;
+              break;
+          }
+          case 's': {
+              // Shielding Thickness
+              std::cout << "\nArg - Shielding Thickness: "<< optarg << std::endl;
+              G4double thickness = std::stod(optarg);
+              DetectorMessenger::GetInstance()->SetThickness(thickness);
+              break;
+          }
+          case 'm': {
+              //Shielding Material
+              std::cout << "\nArg - Shielding Material: "<< optarg << "\n\n\n" << std::endl;
+              G4String material = optarg;  
+              DetectorMessenger::GetInstance()->SetShieldMat(material);
+              break;
+          }
+          case 'i':
+              batch_mode = false; 
+              break;
+          default: {
+              break; 
+          }
+      }
+  }
+
 
 
   // Set mandatory initialization classes
@@ -55,26 +99,22 @@ int main(int argc,char** argv)
   G4VisManager* visManager = new G4VisExecutive;
   visManager->Initialize();
 
-  // Get the pointer to the User Interface manager
-  G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
-  // Process macro or start UI session
-  //
-  if ( ! ui ) { 
-    // batch mode
+
+  // Must be done here so world can be constructed with correct shielding
+  if (batch_mode) {
     G4String command = "/control/execute ";
-    G4String fileName = argv[1];
+    std::cout << command+fileName << std::endl;
     UImanager->ApplyCommand(command+fileName);
   }
-  else { 
+  else{
     // interactive mode
+    std::cout << "\nInteractive Mode\n" << std::endl;
     UImanager->ApplyCommand("/control/execute init_vis.mac");
     ui->SessionStart();
     delete ui;
+
   }
-
-  
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo.....
