@@ -1,6 +1,6 @@
-The system is: Linux - 5.15.0-89-generic - x86_64
+The system is: Linux - 3.10.0-693.5.2.el7.x86_64 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/3.16.5/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ 
 Build flags: 
 Id flags:  
 
@@ -23,420 +23,473 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/3.16.5/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
+Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d58f7/fast && /usr/bin/make -f CMakeFiles/cmTC_d58f7.dir/build.make CMakeFiles/cmTC_d58f7.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d58f7.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_d58f7.dir/testCCompiler.c.o   -c /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_d58f7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d58f7.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_d58f7.dir/testCCompiler.c.o  -o cmTC_d58f7 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_b84d0/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b84d0.dir/build.make CMakeFiles/cmTC_b84d0.dir/build
+gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b84d0.dir/testCCompiler.c.o
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc    -o CMakeFiles/cmTC_b84d0.dir/testCCompiler.c.o   -c /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b84d0
+/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b84d0.dir/link.txt --verbose=1
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc      CMakeFiles/cmTC_b84d0.dir/testCCompiler.c.o  -o cmTC_b84d0 
+gmake[1]: Leaving directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
+Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_94b42/fast && /usr/bin/make -f CMakeFiles/cmTC_94b42.dir/build.make CMakeFiles/cmTC_94b42.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_6d4b7/fast && /usr/bin/gmake -f CMakeFiles/cmTC_6d4b7.dir/build.make CMakeFiles/cmTC_6d4b7.dir/build
+gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc   -v -o CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o   -c /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCCompilerABI.c
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff
 Thread model: posix
-gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaYub9l.s
-GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-
+gcc version 5.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/cc1 -quiet -v /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccHWSFRk.s
+GNU C11 (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.1.0, MPFR version 3.1.4-p3, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../x86_64-unknown-linux-gnu/include"
+ignoring nonexistent directory "/opt/pkg/apps/geant4/10.7/include64"
+ignoring duplicate directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include"
+  as it is a non-system directory that duplicates a system directory
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-linux-gnu/9/include
- /usr/local/include
- /usr/include/x86_64-linux-gnu
+ /opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include
+ /opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include
+ /opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include
+ /opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include
+ /opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed
  /usr/include
 End of search list.
-GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-
+GNU C11 (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.1.0, MPFR version 3.1.4-p3, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o /tmp/ccaYub9l.s
-GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_94b42
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94b42.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o  -o cmTC_94b42 
+Compiler executable checksum: dceb776b5bd389f53b482716131b6020
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o /tmp/ccHWSFRk.s
+GNU assembler version 2.26 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.26.20160125
+COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_6d4b7
+/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d4b7.dir/link.txt --verbose=1
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc     -v CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o  -o cmTC_6d4b7 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff
 Thread model: posix
-gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94b42' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQA7pcM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_94b42 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94b42' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+gcc version 5.4.0 (GCC) 
+COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d4b7' '-mtune=generic' '-march=x86-64'
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEF9XIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6d4b7 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib -L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib -L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
 
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-    add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
+    add: [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+    add: [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+    add: [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+    add: [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+    add: [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include] ==> [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include] ==> [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include] ==> [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include] ==> [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include;/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include;/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include;/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include;/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_94b42/fast && /usr/bin/make -f CMakeFiles/cmTC_94b42.dir/build.make CMakeFiles/cmTC_94b42.dir/build]
-  ignore line: [make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_6d4b7/fast && /usr/bin/gmake -f CMakeFiles/cmTC_6d4b7.dir/build.make CMakeFiles/cmTC_6d4b7.dir/build]
+  ignore line: [gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc   -v -o CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o   -c /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaYub9l.s]
-  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-  ignore line: []
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/cc1 -quiet -v /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccHWSFRk.s]
+  ignore line: [GNU C11 (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.1.0  MPFR version 3.1.4-p3  MPC version 1.0.3]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/opt/pkg/apps/geant4/10.7/include64"]
+  ignore line: [ignoring duplicate directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-  ignore line: []
+  ignore line: [GNU C11 (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.1.0  MPFR version 3.1.4-p3  MPC version 1.0.3]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o /tmp/ccaYub9l.s]
-  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_94b42]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94b42.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o  -o cmTC_94b42 ]
+  ignore line: [Compiler executable checksum: dceb776b5bd389f53b482716131b6020]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o /tmp/ccHWSFRk.s]
+  ignore line: [GNU assembler version 2.26 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.26.20160125]
+  ignore line: [COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_6d4b7]
+  ignore line: [/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d4b7.dir/link.txt --verbose=1]
+  ignore line: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc     -v CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o  -o cmTC_6d4b7 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94b42' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQA7pcM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_94b42 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6d4b7' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEF9XIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6d4b7 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib -L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib -L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccQA7pcM.res] ==> ignore
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEF9XIn.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_94b42] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-    arg [CMakeFiles/cmTC_94b42.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_6d4b7] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib] ==> dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib] ==> dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib] ==> dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib] ==> dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib] ==> dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..]
+    arg [CMakeFiles/cmTC_6d4b7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
+    arg [--no-as-needed] ==> ignore
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+    arg [--no-as-needed] ==> ignore
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib] ==> [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib] ==> [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib] ==> [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib] ==> [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib] ==> [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0;/lib64;/usr/lib64;/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib;/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib;/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib;/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib;/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
   implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
+Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7709e/fast && /usr/bin/make -f CMakeFiles/cmTC_7709e.dir/build.make CMakeFiles/cmTC_7709e.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7709e.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_7709e.dir/testCXXCompiler.cxx.o -c /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_7709e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7709e.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_7709e.dir/testCXXCompiler.cxx.o  -o cmTC_7709e 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_513c5/fast && /usr/bin/gmake -f CMakeFiles/cmTC_513c5.dir/build.make CMakeFiles/cmTC_513c5.dir/build
+gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_513c5.dir/testCXXCompiler.cxx.o
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++     -o CMakeFiles/cmTC_513c5.dir/testCXXCompiler.cxx.o -c /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_513c5
+/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_513c5.dir/link.txt --verbose=1
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++       CMakeFiles/cmTC_513c5.dir/testCXXCompiler.cxx.o  -o cmTC_513c5 
+gmake[1]: Leaving directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
+Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_dfd4b/fast && /usr/bin/make -f CMakeFiles/cmTC_dfd4b.dir/build.make CMakeFiles/cmTC_dfd4b.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_26781/fast && /usr/bin/gmake -f CMakeFiles/cmTC_26781.dir/build.make CMakeFiles/cmTC_26781.dir/build
+gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++    -v -o CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff
 Thread model: posix
-gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWKjgdo.s
-GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-
+gcc version 5.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/cc1plus -quiet -v -D_GNU_SOURCE /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cckk8jmC.s
+GNU C++ (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.1.0, MPFR version 3.1.4-p3, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../x86_64-unknown-linux-gnu/include"
+ignoring nonexistent directory "/opt/pkg/apps/geant4/10.7/include64"
+ignoring duplicate directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include"
+  as it is a non-system directory that duplicates a system directory
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/include/c++/9
- /usr/include/x86_64-linux-gnu/c++/9
- /usr/include/c++/9/backward
- /usr/lib/gcc/x86_64-linux-gnu/9/include
- /usr/local/include
- /usr/include/x86_64-linux-gnu
+ /opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include
+ /opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include
+ /opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include
+ /opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include
+ /opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include
+ /opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/x86_64-unknown-linux-gnu
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed
  /usr/include
 End of search list.
-GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-
+GNU C++ (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.1.0, MPFR version 3.1.4-p3, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWKjgdo.s
-GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_dfd4b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfd4b.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_dfd4b 
+Compiler executable checksum: c041d130480efde0911055695aecd050
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckk8jmC.s
+GNU assembler version 2.26 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.26.20160125
+COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_26781
+/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26781.dir/link.txt --verbose=1
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++      -v CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_26781 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++
+COLLECT_LTO_WRAPPER=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff
 Thread model: posix
-gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccErpTmN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_dfd4b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+gcc version 5.4.0 (GCC) 
+COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_26781' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccptLWtF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_26781 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib -L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib -L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/include/c++/9]
-    add: [/usr/include/x86_64-linux-gnu/c++/9]
-    add: [/usr/include/c++/9/backward]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-    add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
+    add: [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+    add: [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+    add: [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+    add: [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+    add: [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+    add: [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/x86_64-unknown-linux-gnu]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+    add: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
-  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
-  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include] ==> [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include] ==> [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include] ==> [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include] ==> [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include] ==> [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/x86_64-unknown-linux-gnu] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0/x86_64-unknown-linux-gnu]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0/backward]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+  collapse include dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include;/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include;/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include;/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include;/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include;/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0/x86_64-unknown-linux-gnu;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include/c++/5.4.0/backward;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_dfd4b/fast && /usr/bin/make -f CMakeFiles/cmTC_dfd4b.dir/build.make CMakeFiles/cmTC_dfd4b.dir/build]
-  ignore line: [make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_26781/fast && /usr/bin/gmake -f CMakeFiles/cmTC_26781.dir/build.make CMakeFiles/cmTC_26781.dir/build]
+  ignore line: [gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++    -v -o CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWKjgdo.s]
-  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-  ignore line: []
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/cc1plus -quiet -v -D_GNU_SOURCE /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cckk8jmC.s]
+  ignore line: [GNU C++ (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.1.0  MPFR version 3.1.4-p3  MPC version 1.0.3]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/opt/pkg/apps/geant4/10.7/include64"]
+  ignore line: [ignoring duplicate directory "/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/9]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
-  ignore line: [ /usr/include/c++/9/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/x86_64-unknown-linux-gnu]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/include]
+  ignore line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-  ignore line: []
+  ignore line: [GNU C++ (GCC) version 5.4.0 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.1.0  MPFR version 3.1.4-p3  MPC version 1.0.3]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWKjgdo.s]
-  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_dfd4b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfd4b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_dfd4b ]
+  ignore line: [Compiler executable checksum: c041d130480efde0911055695aecd050]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckk8jmC.s]
+  ignore line: [GNU assembler version 2.26 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.26.20160125]
+  ignore line: [COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_26781]
+  ignore line: [/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26781.dir/link.txt --verbose=1]
+  ignore line: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++      -v CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_26781 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-gold=default --enable-plugins --enable-ld --with-plugin-ld=ld.gold --prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --with-local-prefix=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0 --enable-bootstrap --with-isl=/opt/eb-pkg/ebadmin/build/GCCcore/5.4.0/dummy-/gcc-5.4.0/stage2_stuff]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfd4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccErpTmN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_dfd4b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/:/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib/:/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib/:/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib/:/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/:/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_26781' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccptLWtF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_26781 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib -L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib -L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib -L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib -L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64 -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib -L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccErpTmN.res] ==> ignore
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccptLWtF.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_dfd4b] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-    arg [CMakeFiles/cmTC_dfd4b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_26781] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib] ==> dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib] ==> dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib] ==> dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib] ==> dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib] ==> dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib] ==> dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
+    arg [-L/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..]
+    arg [CMakeFiles/cmTC_26781.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -444,116 +497,41 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+    arg [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64/../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib] ==> [/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib] ==> [/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib] ==> [/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib] ==> [/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib] ==> [/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib] ==> [/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
+  collapse library dir [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib64;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0;/lib64;/usr/lib64;/opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib;/opt/eb-pkg/ebadmin/software/ScaLAPACK/2.0.2-gompi-2016b-OpenBLAS-0.2.18-LAPACK-3.6.1/lib;/opt/eb-pkg/ebadmin/software/FFTW/3.3.4-gompi-2016b/lib;/opt/eb-pkg/ebadmin/software/OpenBLAS/0.2.18-GCC-5.4.0-2.26-LAPACK-3.6.1/lib;/opt/eb-pkg/ebadmin/software/OpenMPI/1.10.3-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/hwloc/1.11.3-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/numactl/2.0.11-GCC-5.4.0-2.26/lib;/opt/eb-pkg/ebadmin/software/binutils/2.26-GCCcore-5.4.0/lib;/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/lib]
   implicit fwks: []
 
 
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
+Change Dir: /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_12eb9/fast && /usr/bin/make -f CMakeFiles/cmTC_12eb9.dir/build.make CMakeFiles/cmTC_12eb9.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12eb9.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_12eb9.dir/CheckIncludeFile.c.o   -c /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_12eb9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12eb9.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_12eb9.dir/CheckIncludeFile.c.o  -o cmTC_12eb9 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_c15e7/fast && /usr/bin/make -f CMakeFiles/cmTC_c15e7.dir/build.make CMakeFiles/cmTC_c15e7.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c15e7.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_c15e7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c15e7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c15e7.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_c15e7.dir/CheckFunctionExists.c.o  -o cmTC_c15e7  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_38e58/fast && /usr/bin/make -f CMakeFiles/cmTC_38e58.dir/build.make CMakeFiles/cmTC_38e58.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_38e58.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_38e58.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_38e58
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38e58.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_38e58.dir/CheckFunctionExists.c.o  -o cmTC_38e58 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function connect exists passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_8d5b8/fast && /usr/bin/make -f CMakeFiles/cmTC_8d5b8.dir/build.make CMakeFiles/cmTC_8d5b8.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8d5b8.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_8d5b8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8d5b8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d5b8.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_8d5b8.dir/CheckFunctionExists.c.o  -o cmTC_8d5b8 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function remove exists passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_196db/fast && /usr/bin/make -f CMakeFiles/cmTC_196db.dir/build.make CMakeFiles/cmTC_196db.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_196db.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_196db.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_196db
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_196db.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_196db.dir/CheckFunctionExists.c.o  -o cmTC_196db 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function shmat exists passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_7c65a/fast && /usr/bin/make -f CMakeFiles/cmTC_7c65a.dir/build.make CMakeFiles/cmTC_7c65a.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7c65a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_7c65a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7c65a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c65a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_7c65a.dir/CheckFunctionExists.c.o  -o cmTC_7c65a 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_04a7e/fast && /usr/bin/make -f CMakeFiles/cmTC_04a7e.dir/build.make CMakeFiles/cmTC_04a7e.dir/build
-make[1]: Entering directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_04a7e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_04a7e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_04a7e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04a7e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_04a7e.dir/CheckFunctionExists.c.o  -o cmTC_04a7e  -lICE 
-make[1]: Leaving directory '/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_21ec2/fast && /usr/bin/gmake -f CMakeFiles/cmTC_21ec2.dir/build.make CMakeFiles/cmTC_21ec2.dir/build
+gmake[1]: Entering directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21ec2.dir/CheckIncludeFile.c.o
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc    -o CMakeFiles/cmTC_21ec2.dir/CheckIncludeFile.c.o   -c /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_21ec2
+/opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21ec2.dir/link.txt --verbose=1
+/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/gcc      CMakeFiles/cmTC_21ec2.dir/CheckIncludeFile.c.o  -o cmTC_21ec2 
+gmake[1]: Leaving directory `/users/ll00145/post_doc/gamma_sims/build/CMakeFiles/CMakeTmp'
 
 
 

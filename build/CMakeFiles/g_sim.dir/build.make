@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukelee-brewin/post_doc/gamma_sims
+CMAKE_SOURCE_DIR = /users/ll00145/post_doc/gamma_sims
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukelee-brewin/post_doc/gamma_sims/build
+CMAKE_BINARY_DIR = /users/ll00145/post_doc/gamma_sims/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/g_sim.dir/depend.make
@@ -59,120 +59,120 @@ include CMakeFiles/g_sim.dir/flags.make
 
 CMakeFiles/g_sim.dir/g_sim.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/g_sim.cc.o: ../g_sim.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/g_sim.dir/g_sim.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/g_sim.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/g_sim.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/g_sim.dir/g_sim.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/g_sim.cc.o -c /users/ll00145/post_doc/gamma_sims/g_sim.cc
 
 CMakeFiles/g_sim.dir/g_sim.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/g_sim.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/g_sim.cc > CMakeFiles/g_sim.dir/g_sim.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/g_sim.cc > CMakeFiles/g_sim.dir/g_sim.cc.i
 
 CMakeFiles/g_sim.dir/g_sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/g_sim.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/g_sim.cc -o CMakeFiles/g_sim.dir/g_sim.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/g_sim.cc -o CMakeFiles/g_sim.dir/g_sim.cc.s
 
 CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o: ../src/ActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/ActionInitialization.cc.o -c /users/ll00145/post_doc/gamma_sims/src/ActionInitialization.cc
 
 CMakeFiles/g_sim.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/ActionInitialization.cc > CMakeFiles/g_sim.dir/src/ActionInitialization.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/ActionInitialization.cc > CMakeFiles/g_sim.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/g_sim.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/ActionInitialization.cc -o CMakeFiles/g_sim.dir/src/ActionInitialization.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/ActionInitialization.cc -o CMakeFiles/g_sim.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/g_sim.dir/src/Detector.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/Detector.cc.o: ../src/Detector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/g_sim.dir/src/Detector.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/Detector.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/Detector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/g_sim.dir/src/Detector.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/Detector.cc.o -c /users/ll00145/post_doc/gamma_sims/src/Detector.cc
 
 CMakeFiles/g_sim.dir/src/Detector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/Detector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/Detector.cc > CMakeFiles/g_sim.dir/src/Detector.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/Detector.cc > CMakeFiles/g_sim.dir/src/Detector.cc.i
 
 CMakeFiles/g_sim.dir/src/Detector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/Detector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/Detector.cc -o CMakeFiles/g_sim.dir/src/Detector.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/Detector.cc -o CMakeFiles/g_sim.dir/src/Detector.cc.s
 
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.o -c /users/ll00145/post_doc/gamma_sims/src/DetectorConstruction.cc
 
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorConstruction.cc > CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/DetectorConstruction.cc > CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorConstruction.cc -o CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/DetectorConstruction.cc -o CMakeFiles/g_sim.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o: ../src/DetectorMessenger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.o -c /users/ll00145/post_doc/gamma_sims/src/DetectorMessenger.cc
 
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc > CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/DetectorMessenger.cc > CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.i
 
 CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/DetectorMessenger.cc -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/DetectorMessenger.cc -o CMakeFiles/g_sim.dir/src/DetectorMessenger.cc.s
 
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/EventAction.cc.o: ../src/EventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/g_sim.dir/src/EventAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/EventAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/g_sim.dir/src/EventAction.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/EventAction.cc.o -c /users/ll00145/post_doc/gamma_sims/src/EventAction.cc
 
 CMakeFiles/g_sim.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/EventAction.cc > CMakeFiles/g_sim.dir/src/EventAction.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/EventAction.cc > CMakeFiles/g_sim.dir/src/EventAction.cc.i
 
 CMakeFiles/g_sim.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/EventAction.cc -o CMakeFiles/g_sim.dir/src/EventAction.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/EventAction.cc -o CMakeFiles/g_sim.dir/src/EventAction.cc.s
 
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o -c /users/ll00145/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc > CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc > CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc -o CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/PrimaryGeneratorAction.cc -o CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/g_sim.dir/src/RunAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/RunAction.cc.o: ../src/RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/g_sim.dir/src/RunAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/RunAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/g_sim.dir/src/RunAction.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/RunAction.cc.o -c /users/ll00145/post_doc/gamma_sims/src/RunAction.cc
 
 CMakeFiles/g_sim.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/RunAction.cc > CMakeFiles/g_sim.dir/src/RunAction.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/RunAction.cc > CMakeFiles/g_sim.dir/src/RunAction.cc.i
 
 CMakeFiles/g_sim.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/RunAction.cc -o CMakeFiles/g_sim.dir/src/RunAction.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/RunAction.cc -o CMakeFiles/g_sim.dir/src/RunAction.cc.s
 
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.o: CMakeFiles/g_sim.dir/flags.make
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/g_sim.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/SteppingAction.cc.o -c /home/lukelee-brewin/post_doc/gamma_sims/src/SteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/g_sim.dir/src/SteppingAction.cc.o"
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g_sim.dir/src/SteppingAction.cc.o -c /users/ll00145/post_doc/gamma_sims/src/SteppingAction.cc
 
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g_sim.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukelee-brewin/post_doc/gamma_sims/src/SteppingAction.cc > CMakeFiles/g_sim.dir/src/SteppingAction.cc.i
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/ll00145/post_doc/gamma_sims/src/SteppingAction.cc > CMakeFiles/g_sim.dir/src/SteppingAction.cc.i
 
 CMakeFiles/g_sim.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g_sim.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukelee-brewin/post_doc/gamma_sims/src/SteppingAction.cc -o CMakeFiles/g_sim.dir/src/SteppingAction.cc.s
+	/opt/eb-pkg/ebadmin/software/GCCcore/5.4.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/ll00145/post_doc/gamma_sims/src/SteppingAction.cc -o CMakeFiles/g_sim.dir/src/SteppingAction.cc.s
 
 # Object files for target g_sim
 g_sim_OBJECTS = \
@@ -199,55 +199,40 @@ g_sim: CMakeFiles/g_sim.dir/src/PrimaryGeneratorAction.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/RunAction.cc.o
 g_sim: CMakeFiles/g_sim.dir/src/SteppingAction.cc.o
 g_sim: CMakeFiles/g_sim.dir/build.make
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4Tree.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4FR.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4GMocren.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4visHepRep.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4RayTracer.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4VRML.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4OpenGL.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4gl2ps.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4vis_management.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4modeling.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4interfaces.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4persistency.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4error_propagation.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4readout.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4physicslists.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4tasking.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4parmodels.so
-g_sim: /usr/lib/x86_64-linux-gnu/libGL.so
-g_sim: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.12.8
-g_sim: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8
-g_sim: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
-g_sim: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
-g_sim: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
-g_sim: /usr/lib/x86_64-linux-gnu/libXmu.so
-g_sim: /usr/lib/x86_64-linux-gnu/libXext.so
-g_sim: /usr/lib/x86_64-linux-gnu/libXt.so
-g_sim: /usr/lib/x86_64-linux-gnu/libICE.so
-g_sim: /usr/lib/x86_64-linux-gnu/libSM.so
-g_sim: /usr/lib/x86_64-linux-gnu/libX11.so
-g_sim: /usr/lib/x86_64-linux-gnu/libxerces-c.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4run.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4event.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4tracking.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4processes.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4analysis.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4expat.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4digits_hits.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4track.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4particles.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4geometry.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4materials.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4zlib.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4graphics_reps.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4intercoms.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4global.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4clhep.so
-g_sim: /home/lukelee-brewin/GEANT4/g4install/lib/libG4ptl.so.0.0.2
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4Tree.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4FR.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4GMocren.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4visHepRep.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4RayTracer.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4VRML.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4vis_management.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4modeling.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4interfaces.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4persistency.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4error_propagation.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4readout.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4physicslists.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4tasking.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4parmodels.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4run.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4event.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4tracking.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4processes.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4analysis.so
+g_sim: /opt/eb-pkg/ebadmin/software/expat/2.2.0-foss-2016b/lib/libexpat.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4digits_hits.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4track.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4particles.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4geometry.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4materials.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4zlib.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4graphics_reps.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4intercoms.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4global.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4clhep.so
+g_sim: /opt/pkg/apps/geant4/10.7/lib64/libG4ptl.so.0.0.2
 g_sim: CMakeFiles/g_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable g_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/ll00145/post_doc/gamma_sims/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable g_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/g_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -260,6 +245,6 @@ CMakeFiles/g_sim.dir/clean:
 .PHONY : CMakeFiles/g_sim.dir/clean
 
 CMakeFiles/g_sim.dir/depend:
-	cd /home/lukelee-brewin/post_doc/gamma_sims/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukelee-brewin/post_doc/gamma_sims /home/lukelee-brewin/post_doc/gamma_sims /home/lukelee-brewin/post_doc/gamma_sims/build /home/lukelee-brewin/post_doc/gamma_sims/build /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/g_sim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /users/ll00145/post_doc/gamma_sims/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /users/ll00145/post_doc/gamma_sims /users/ll00145/post_doc/gamma_sims /users/ll00145/post_doc/gamma_sims/build /users/ll00145/post_doc/gamma_sims/build /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/g_sim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/g_sim.dir/depend
 

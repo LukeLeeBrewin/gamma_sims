@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=gamma_sims
+#SBATCH --partition=shared
+#SBATCH --time=144:00:00
+#SBATCH --output=gamma_sims%A_%a.out
+#SBATCH --error=gamma_sims_%A_%a.err
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --array=1-150   # Adjust the array range as needed
+
+module load geant4
+cd ../build
+
+shielding=$(awk "BEGIN {printf \"%.2f\", $SLURM_ARRAY_TASK_ID * 0.1}")
+
+./g_sim -b isotope.mac -o Job_$SLURM_ARRAY_TASK_ID -s $shielding

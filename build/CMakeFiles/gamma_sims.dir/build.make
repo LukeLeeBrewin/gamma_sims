@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/pkg/apps/geant4/cmake-3.16.5-Linux-x86_64/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukelee-brewin/post_doc/gamma_sims
+CMAKE_SOURCE_DIR = /users/ll00145/post_doc/gamma_sims
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukelee-brewin/post_doc/gamma_sims/build
+CMAKE_BINARY_DIR = /users/ll00145/post_doc/gamma_sims/build
 
 # Utility rule file for gamma_sims.
 
@@ -71,6 +71,6 @@ CMakeFiles/gamma_sims.dir/clean:
 .PHONY : CMakeFiles/gamma_sims.dir/clean
 
 CMakeFiles/gamma_sims.dir/depend:
-	cd /home/lukelee-brewin/post_doc/gamma_sims/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukelee-brewin/post_doc/gamma_sims /home/lukelee-brewin/post_doc/gamma_sims /home/lukelee-brewin/post_doc/gamma_sims/build /home/lukelee-brewin/post_doc/gamma_sims/build /home/lukelee-brewin/post_doc/gamma_sims/build/CMakeFiles/gamma_sims.dir/DependInfo.cmake --color=$(COLOR)
+	cd /users/ll00145/post_doc/gamma_sims/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /users/ll00145/post_doc/gamma_sims /users/ll00145/post_doc/gamma_sims /users/ll00145/post_doc/gamma_sims/build /users/ll00145/post_doc/gamma_sims/build /users/ll00145/post_doc/gamma_sims/build/CMakeFiles/gamma_sims.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gamma_sims.dir/depend
 
