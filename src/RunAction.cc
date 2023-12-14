@@ -60,8 +60,10 @@ void RunAction::BeginOfRunAction(const G4Run* run)
     std::stringstream strRunID;
     strRunID << runID;
   
+    G4String output = DetectorMessenger::GetInstance()->GetOutputFile();
+
     G4AnalysisManager *man = G4AnalysisManager::Instance();
-    man->OpenFile("output"+strRunID.str()+".root");
+    man->OpenFile(output+"_"+strRunID.str()+".root");
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

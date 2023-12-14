@@ -27,7 +27,7 @@ int main(int argc,char** argv)
     runManager->SetNumberOfThreads(G4Threading::G4GetNumberOfCores()-2); 
   #else
     //my Verbose output class
-    G4VSteppingVerbose::SetInstance(new SteppingVerbose);
+    //G4VSteppingVerbose::SetInstance(new SteppingVerbose);
     G4RunManager* runManager = new G4RunManager;
   #endif
 
@@ -40,6 +40,7 @@ int main(int argc,char** argv)
       {"file", required_argument, 0, 'b'},
       {"shielding", required_argument, 0, 's'},
       {"shieldmat", required_argument, 0, 'm'},
+      {"output", required_argument, 0, 'o'},
       {"interactive", no_argument, 0, 'i'},
       {0, 0, 0, 0} // Last element must be filled with zeros
   };
@@ -47,7 +48,7 @@ int main(int argc,char** argv)
   int option; 
   bool batch_mode = false;
   G4String fileName;
-  while ((option = getopt_long(argc, argv, "b:s:m:i", longOptions, NULL)) != -1) {
+  while ((option = getopt_long(argc, argv, "b:s:m:o:i", longOptions, NULL)) != -1) {
       switch (option) {
           case 'b': {
               // Batch mode
@@ -68,6 +69,13 @@ int main(int argc,char** argv)
               std::cout << "\nArg - Shielding Material: "<< optarg << "\n\n\n" << std::endl;
               G4String material = optarg;  
               DetectorMessenger::GetInstance()->SetShieldMat(material);
+              break;
+          }
+
+          case 'o': {
+              //Shielding Material
+              std::cout << "\nArg - Output File Name: "<< optarg << "\n\n\n" << std::endl;  
+              DetectorMessenger::GetInstance()->SetOutputFile(optarg);
               break;
           }
           case 'i':

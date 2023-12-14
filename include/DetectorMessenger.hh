@@ -11,9 +11,11 @@ public:
     void SetThickness(G4double newThickness); // Method to set the variable
     void SetShieldMat(G4String newShieldMat);
     void SetPosition(G4ThreeVector newPosition);
+    void SetOutputFile(G4String newOutputFile);
 
     G4double GetThickness() const; // Method to get the variable
     G4String GetShieldMat() const; 
+    G4String GetOutputFile() const;
 
     G4ThreeVector GetPosition() const; 
 
@@ -22,6 +24,7 @@ private:
     static DetectorMessenger* instance;
     G4double thickness; 
     G4String shield_mat;
+    G4String outputFile;
     G4ThreeVector position;
 };
 

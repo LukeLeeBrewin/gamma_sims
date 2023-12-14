@@ -12,7 +12,7 @@ DetectorMessenger* DetectorMessenger::GetInstance() {
 
 DetectorMessenger::DetectorMessenger() {
     // Initialize your variable here
-    thickness = 0; // Initializing with default value
+    thickness = 0.1; // Initializing with default value
     shield_mat = "G4_Al";
     position = G4ThreeVector(0., 0., 0.);
 }
@@ -31,6 +31,15 @@ void DetectorMessenger::SetShieldMat(G4String newShieldMat) {
 
 G4String DetectorMessenger::GetShieldMat() const {
     return shield_mat;
+}
+
+
+void DetectorMessenger::SetOutputFile(G4String newOutputFile) {
+    outputFile = newOutputFile;
+}
+
+G4String DetectorMessenger::GetOutputFile() const {
+    return outputFile;
 }
 
 void DetectorMessenger::SetPosition(G4ThreeVector newPosition){

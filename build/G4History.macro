@@ -61,8 +61,4 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/gps/particle isotope
-/gps/particle ion
-/gps/ion 27 60
-/gps/position 0 0 10 cm
-/run/beamOn 200
+/run/beamOn 100

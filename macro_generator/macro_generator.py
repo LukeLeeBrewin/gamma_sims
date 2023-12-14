@@ -19,7 +19,7 @@ class MacroGenerator:
         # Calculate source positions
         self.z = distance_to_source
         self.y = 0
-        self.x = np.linspace(-10, 20, 10) # Test 
+        self.x = np.linspace(-10, 80, 10) # Test 
 
 
 
@@ -94,9 +94,10 @@ class MacroGenerator:
 
 if __name__ == "__main__":
 
-    activity_array = [1e5]
+    activity_array = [1e3]
     shielding_array = [0]
-    isotope_list = ["Ba133", "Cs137", "Co57", "F18", "Sr90", "Sr82", "Tl201", "Eu152", "I137", "Tc99", "Au198", "Cr51", "Mo99", "I131", "In131", "Sc46"]
+    # isotope_list = ["Ba133", "Cs137", "Co57", "F18", "Sr90", "Sr82", "Tl201", "Eu152", "I137", "Tc99", "Au198", "Cr51", "Mo99", "I131", "In131", "Sc46"]
+    isotope_list = ["Cs137", "Co60", "Ba133"]
     distance_to_source = [3]
     source_speed = []
 
